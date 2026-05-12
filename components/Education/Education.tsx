@@ -8,13 +8,13 @@ const Education = () => {
       degree: 'Applicatie Ontwerper',
       institution: 'Natin-MBO ICT',
       date: '2019 - 2023',
-      status: 'Afgerond',
+      status: 'Completed',
     },
     {
       degree: 'Software Engineering',
       institution: 'Unasat-HBO',
       date: '2023 - heden',
-      status: '3e jaar',
+      status: '3rd year currently studying',
     },
   ];
 
