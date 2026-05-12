@@ -22,17 +22,16 @@ const Hero = () => {
           <p className={styles.subtitle}>Software Developer</p>
 
           <h1 className={styles.heading}>
-            Hallo, ik ben <span>Shakeel</span> <span>Ramdhiansing</span>
+            Hi, I'm <span>Shakeel</span> <span>Ramdhiansing</span>
           </h1>
 
           <p className={styles.description}>
-            Ik bouw moderne, snelle en gebruiksvriendelijke websites met een
-            sterke focus op design, performance en animaties.
+            I build modern, fast, and user-friendly websites with a strong focus on design, performance, and animations.
           </p>
 
           <div className={styles.buttons}>
-            <button className={styles.primaryBtn}>Bekijk Projecten</button>
-            <button className={styles.secondaryBtn}>Contact</button>
+            <button className={styles.primaryBtn}><a href="#projects">Check Projects</a></button>
+            <button className={styles.secondaryBtn}><a href="#contact">Contact</a></button>
           </div>
         </div>
       </div>

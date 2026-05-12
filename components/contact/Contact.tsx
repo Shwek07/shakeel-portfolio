@@ -24,8 +24,7 @@ const Contact = () => {
           </h1>
 
           <p className={styles.description}>
-            Heb je een project, business idee of wil je samenwerken?
-            Neem gerust contact met mij op via WhatsApp of e-mail.
+            Do you have a project, a business idea, or would you like to collaborate? Feel free to contact me via WhatsApp or email.
           </p>
 
           <div className={styles.contactInfo}>

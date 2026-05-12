@@ -105,8 +105,14 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  text-decoration: none;
+  color: white;
 }
+.buttons a{
 
+  text-decoration: none;
+  color: white;
+}
 .primaryBtn,
 .secondaryBtn {
   padding: 14px 30px;

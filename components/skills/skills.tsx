@@ -19,7 +19,7 @@ const Skills = () => {
       <div className={styles.container}>
         <div className={styles.headingWrapper}>
           <div className={styles.line}></div>
-          <h2>Vaardigheden</h2>
+          <h2>Skills</h2>
         </div>
 
         <div className={styles.skillsGrid}>

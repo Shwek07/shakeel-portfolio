@@ -23,7 +23,7 @@ const Education = () => {
     <div className={styles.wrapper}>
       <div className={styles.titleRow}>
         <div className={styles.line}></div>
-        <h2>Educatie</h2>
+        <h2>Education</h2>
       </div>
 
       <div className={styles.cardContainer}>
