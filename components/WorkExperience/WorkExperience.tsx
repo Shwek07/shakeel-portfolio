@@ -12,7 +12,7 @@ const WorkExperience = () => {
         'During my internship at the Anton de Kom University of Suriname (AdeKUS), I contributed to the development of a document approval system. This system was developed to digitize and make more efficient the manual process of managing and approving purchase receipts.',
     },
     {
-      role: 'Marketing & Communicatie',
+      role: 'Marketing & Communication',
       company: 'Anton de Kom University of Suriname',
       period: 'sept 2023 - heden',
       description:
