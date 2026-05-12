@@ -1,0 +1,59 @@
+.section {
+  position: relative;
+  padding: 120px 40px;
+  background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at top left,
+    rgba(56,189,248,0.15),
+    transparent 30%),
+
+    radial-gradient(circle at bottom right,
+    rgba(139,92,246,0.15),
+    transparent 30%);
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1300px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.column {
+  animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 968px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 80px 20px;
+  }
+}

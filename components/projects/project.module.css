@@ -1,0 +1,148 @@
+.projectsSection {
+  position: relative;
+  padding: 120px 40px;
+  background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at top left,
+    rgba(56,189,248,0.15),
+    transparent 35%),
+
+    radial-gradient(circle at bottom right,
+    rgba(139,92,246,0.15),
+    transparent 35%);
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.headingWrapper {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 60px;
+}
+
+.line {
+  width: 60px;
+  height: 4px;
+  border-radius: 20px;
+
+  background: linear-gradient(to right, #38bdf8, #8b5cf6);
+}
+
+.headingWrapper h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+
+.projectCard {
+  overflow: hidden;
+
+  border-radius: 28px;
+
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(14px);
+
+  transition: all 0.4s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.35);
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 260px;
+
+  overflow: hidden;
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.projectCard:hover .projectImage {
+  transform: scale(1.05);
+}
+
+.projectContent {
+  padding: 30px;
+}
+
+.projectContent h3 {
+  color: white;
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+}
+
+.projectContent p {
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.liveButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 22px;
+
+  border-radius: 14px;
+
+  background: linear-gradient(to right, #38bdf8, #8b5cf6);
+
+  color: white;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.liveButton:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 968px) {
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .projectsSection {
+    padding: 80px 20px;
+  }
+
+  .imageWrapper {
+    height: 220px;
+  }
+
+  .headingWrapper h2 {
+    font-size: 2rem;
+  }
+}
