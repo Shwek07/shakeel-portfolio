@@ -29,34 +29,49 @@ const Contact = () => {
           </p>
 
           <div className={styles.contactInfo}>
-            
-            <div className={styles.contactCard}>
+
+            {/* PHONE */}
+            <a
+              href="tel:+5978685952"
+              className={styles.contactCard}
+            >
               <div className={styles.icon}>📞</div>
 
               <div>
                 <h3>Phone</h3>
                 <p>+597 868-5952</p>
               </div>
-            </div>
+            </a>
 
-            
-            <div className={styles.contactCard}>
+            {/* WHATSAPP */}
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.contactCard}
+            >
               <div className={styles.icon}>🌐</div>
 
               <div>
                 <h3>WhatsApp</h3>
                 <p>+597 868-5952</p>
               </div>
-            </div>
+            </a>
 
-            <div className={styles.contactCard}>
+            {/* EMAIL */}
+            <a
+              href="mailto:shakeelramdhiansing@gmail.com"
+              className={styles.contactCard}
+            >
               <div className={styles.icon}>✉️</div>
 
               <div>
                 <h3>Email</h3>
                 <p>shakeelramdhiansing@gmail.com</p>
               </div>
-            </div>
+            </a>
+
+        
           </div>
         </div>
 
