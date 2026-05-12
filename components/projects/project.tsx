@@ -35,7 +35,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className={styles.projectsSection}>
+    <section id='projects' className={styles.projectsSection}>
       <div className={styles.overlay}></div>
 
       <div className={styles.container}>

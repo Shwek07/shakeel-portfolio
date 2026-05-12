@@ -6,7 +6,7 @@ import styles from './ExperienceSection.module.css';
 
 const ExperienceSection = () => {
   return (
-    <section className={styles.section}>
+    <section id='Ervaring' className={styles.section}>
       <div className={styles.overlay}></div>
 
       <div className={styles.container}>

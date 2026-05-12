@@ -5,7 +5,7 @@ import styles from './work.module.css';
 const WorkExperience = () => {
   const workData = [
     {
-      role: 'ICT Stagiarre',
+      role: 'ICT Stagiaire',
       company: 'Anton de Kom Universiteit van Suriname',
       period: 'juni 2023 - aug 2023',
       description:
@@ -24,7 +24,7 @@ const WorkExperience = () => {
     <div className={styles.wrapper}>
       <div className={styles.titleRow}>
         <div className={styles.line}></div>
-        <h2>Work Experience</h2>
+        <h2>Werk Ervaring</h2>
       </div>
 
       <div className={styles.cardContainer}>

@@ -13,13 +13,13 @@ const Skills = () => {
   ];
 
   return (
-    <section className={styles.skillsSection}>
+    <section id='skills' className={styles.skillsSection}>
       <div className={styles.overlay}></div>
 
       <div className={styles.container}>
         <div className={styles.headingWrapper}>
           <div className={styles.line}></div>
-          <h2>Skills</h2>
+          <h2>Vaardigheden</h2>
         </div>
 
         <div className={styles.skillsGrid}>

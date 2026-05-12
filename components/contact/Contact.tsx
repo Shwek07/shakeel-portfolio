@@ -7,7 +7,7 @@ const Contact = () => {
   const whatsappUrl = `https://wa.me/${phoneNumber.replace('+', '')}`;
 
   return (
-    <section className={styles.contactSection}>
+    <section id='contact' className={styles.contactSection}>
       <div className={styles.overlay}></div>
 
       <div className={styles.container}>

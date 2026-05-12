@@ -17,8 +17,10 @@ const Navbar = () => {
         {/* DESKTOP MENU */}
         <nav className={styles.navLinks}>
           <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
+          <a href="#Educatie">Educatie</a>
+          <a href="#Ervaring">Ervaring</a>
+          <a href="#Vaardigheden">Vaardigheden</a>
+          <a href="#projects">Projecten</a>
           <a href="#contact">Contact</a>
         </nav>
 
@@ -41,12 +43,17 @@ const Navbar = () => {
           Home
         </a>
 
-        <a href="#about" onClick={() => setMenuOpen(false)}>
-          About
+        <a href="#Educatie" onClick={() => setMenuOpen(false)}>
+          Educatie
         </a>
-
+        <a href="#Ervaring" onClick={() => setMenuOpen(false)}>
+          Ervaring
+        </a>
+        <a href="#Vaardigheden" onClick={() => setMenuOpen(false)}>
+          Vaardigheden
+        </a>
         <a href="#projects" onClick={() => setMenuOpen(false)}>
-          Projects
+          Projecten
         </a>
 
         <a href="#contact" onClick={() => setMenuOpen(false)}>

@@ -19,10 +19,11 @@ const Education = () => {
   ];
 
   return (
+    <section id='Educatie'>
     <div className={styles.wrapper}>
       <div className={styles.titleRow}>
         <div className={styles.line}></div>
-        <h2>Education</h2>
+        <h2>Educatie</h2>
       </div>
 
       <div className={styles.cardContainer}>
@@ -39,6 +40,7 @@ const Education = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 

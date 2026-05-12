@@ -4,7 +4,7 @@ import styles from './Hero.module.css';
 
 const Hero = () => {
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id='home'>
       <div className={styles.overlay}></div>
 
       <div className={styles.container}>
@@ -19,10 +19,10 @@ const Hero = () => {
 
         {/* RIGHT SIDE - TEXT */}
         <div className={styles.content}>
-          <p className={styles.subtitle}>Frontend Developer</p>
+          <p className={styles.subtitle}>Software Developer</p>
 
           <h1 className={styles.heading}>
-            Hi, I'm <span>Shakeel</span> <span>Ramdhiansing</span>
+            Hallo, ik ben <span>Shakeel</span> <span>Ramdhiansing</span>
           </h1>
 
           <p className={styles.description}>
