@@ -11,7 +11,7 @@ const Hero = () => {
         {/* LEFT SIDE - IMAGE */}
         <div className={styles.imageWrapper}>
           <img
-            src="/images/me.png"
+            src="/images/me.jpg"
             alt="Shakeel"
             className={styles.profileImage}
           />
@@ -26,7 +26,7 @@ const Hero = () => {
           </h1>
 
           <p className={styles.description}>
-            I build modern, fast, and user-friendly websites with a strong focus on design, performance, and animations.
+            I build modern, fast, and user-friendly websites with a strong focus on design, performance and animations.
           </p>
 
           <div className={styles.buttons}>
