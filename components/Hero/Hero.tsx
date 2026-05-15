@@ -3,6 +3,7 @@ import React from 'react';
 import styles from './Hero.module.css';
 
 const Hero = () => {
+
   return (
     <section className={styles.hero} id='home'>
       <div className={styles.overlay}></div>
@@ -26,12 +27,14 @@ const Hero = () => {
           </h1>
 
           <p className={styles.description}>
-            I build modern, fast, and user-friendly websites with a strong focus on design, performance and animations.
+            I build modern, fast and user-friendly websites with a strong focus on design, performance and animations.
           </p>
 
           <div className={styles.buttons}>
             <button className={styles.primaryBtn}><a href="#projects">Check Projects</a></button>
             <button className={styles.secondaryBtn}><a href="#contact">Contact</a></button>
+            
+            
           </div>
         </div>
       </div>
