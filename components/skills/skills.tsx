@@ -13,7 +13,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id='skills' className={styles.skillsSection}>
+    <section id='Vaardigheden' className={styles.skillsSection}>
       <div className={styles.overlay}></div>
 
       <div className={styles.container}>
