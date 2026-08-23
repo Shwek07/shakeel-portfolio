@@ -48,11 +48,11 @@
 
       /* --- meta --- */
       'meta.home.title': 'Shakeel Ramdhiansing — Software engineering student',
-      'meta.home.desc': 'Portfolio of Shakeel Ramdhiansing, a third-year Software Engineering student from Suriname who builds booking and reservation web apps.',
+      'meta.home.desc': 'Portfolio of Shakeel Ramdhiansing, a third-year Software Engineering student from Suriname who builds Modern scalable web applications — from idea to production.',
       'meta.about.title': 'About — Shakeel Ramdhiansing',
       'meta.about.desc': 'Background, education and interests of Shakeel Ramdhiansing, a Software Engineering student at Unasat in Suriname.',
       'meta.work.title': 'Work — Shakeel Ramdhiansing',
-      'meta.work.desc': 'Projects built by Shakeel Ramdhiansing: booking and reservation web applications, with the technologies used and links to the live sites.',
+      'meta.work.desc': 'Projects built by Shakeel Ramdhiansing with the technologies used and links to the live sites.',
       'meta.contact.title': 'Contact — Shakeel Ramdhiansing',
       'meta.contact.desc': 'Get in touch with Shakeel Ramdhiansing by email, phone, WhatsApp or GitHub.',
 
@@ -227,11 +227,11 @@
 
       /* --- meta --- */
       'meta.home.title': 'Shakeel Ramdhiansing — student Software Engineering',
-      'meta.home.desc': 'Portfolio van Shakeel Ramdhiansing, derdejaars student Software Engineering uit Suriname die boekings- en reserveringsapplicaties bouwt.',
+      'meta.home.desc': 'Portfolio van Shakeel Ramdhiansing, derdejaars student Software Engineering uit Suriname die noderne, schaalbare webapplicaties bouwt — van idee tot productie.',
       'meta.about.title': 'Over mij — Shakeel Ramdhiansing',
       'meta.about.desc': 'Achtergrond, opleiding en interesses van Shakeel Ramdhiansing, student Software Engineering aan Unasat in Suriname.',
       'meta.work.title': 'Werk — Shakeel Ramdhiansing',
-      'meta.work.desc': 'Projecten van Shakeel Ramdhiansing: boekings- en reserveringsapplicaties, met de gebruikte technieken en links naar de live sites.',
+      'meta.work.desc': 'Projecten van Shakeel Ramdhiansing met de gebruikte technieken en links naar de live sites.',
       'meta.contact.title': 'Contact — Shakeel Ramdhiansing',
       'meta.contact.desc': 'Neem contact op met Shakeel Ramdhiansing via e-mail, telefoon, WhatsApp of GitHub.',
 

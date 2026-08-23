@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Code tag logo">
+  <!--
+    Tab logo: a code tag on a rounded accent tile.
+
+    The colours are the accent tokens from css/style.css, so the tab matches
+    the page: #2347d4 tile with a white glyph in light, and the lighter
+    #8fb0ff tile with a near-black glyph in dark.
+
+    A favicon cannot see the data-theme attribute on the page, so the dark
+    variant follows the visitor's SYSTEM setting rather than the toggle in the
+    header. That is what a visitor who never touched the toggle sees anyway.
+
+    Note: no "-" pairs in this comment. XML forbids them, and the browser
+    refuses to render the whole file if it finds one.
+  -->
+  <style>
+    .tile { fill: #2347d4; }
+    .glyph { stroke: #ffffff; }
+
+    @media (prefers-color-scheme: dark) {
+      .tile { fill: #8fb0ff; }
+      .glyph { stroke: #0d1017; }
+    }
+  </style>
+
+  <rect class="tile" width="32" height="32" rx="7" />
+  <path class="glyph" d="M11.5 10.5 7 16l4.5 5.5M20.5 10.5 25 16l-4.5 5.5M17.8 9.5l-3.6 13"
+        fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
