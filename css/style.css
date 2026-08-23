@@ -1002,6 +1002,25 @@ a {
   height: 1.25rem;
 }
 
+/* From here up the hero's left column is wide enough to hold all six items on
+   one row, but only with the icons and gaps a notch tighter. Wrapping stays
+   allowed as a fallback in case a wider fallback font kicks in. */
+@media (min-width: 72rem) {
+  .techstack__list {
+    column-gap: var(--space-3);
+  }
+
+  .techstack__item {
+    gap: 0.375rem;
+    font-size: 0.8125rem;
+  }
+
+  .techstack__item svg {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+}
+
 
 /* 12. Hero photo + floating cards
    ========================================================================== */
