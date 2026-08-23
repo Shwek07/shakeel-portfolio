@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" data-page="work">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Work &mdash; Shakeel Ramdhiansing</title>
+  <meta name="description" content="Projects built by Shakeel Ramdhiansing: booking and reservation web applications, with the technologies used and links to the live sites.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme.js"></script>
+  <script src="js/i18n.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="index.html">Shakeel Ramdhiansing<span aria-hidden="true">.</span></a>
+
+      <nav class="nav" aria-label="Main navigation" data-i18n-aria-label="nav.aria">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html" data-spy-link="home" data-i18n="nav.home">Home</a></li>
+          <li><a class="nav__link" href="about.html" data-spy-link="about" data-i18n="nav.about">About</a></li>
+          <li><a class="nav__link" href="work.html" aria-current="page" data-spy-link="work" data-i18n="nav.work">Work</a></li>
+          <li><a class="nav__link" href="contact.html" data-spy-link="contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+
+        <div class="nav__tools">
+          <div class="lang lang--header" role="group" aria-label="Language" data-i18n-aria-label="lang.aria">
+            <button class="lang__btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+            <span class="lang__sep" aria-hidden="true">/</span>
+            <button class="lang__btn" type="button" data-lang="nl" aria-pressed="false">NL</button>
+          </div>
+
+          <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch to dark theme">
+            <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20.5 13.3A8.5 8.5 0 1 1 10.7 3.5a7 7 0 0 0 9.8 9.8Z" />
+            </svg>
+            <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2" />
+              <path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4" />
+            </svg>
+          </button>
+
+          <button class="icon-btn nav__toggle" type="button" data-menu-open aria-expanded="false"
+                  aria-controls="menu" aria-label="Open menu" data-i18n-aria-label="nav.menu.open">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+              <path d="M4 8h16M4 16h16" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== FULLSCREEN MOBILE MENU ==================== -->
+  <div class="menu" id="menu" data-menu role="dialog" aria-modal="true"
+       aria-label="Menu" data-i18n-aria-label="nav.menu.aria" hidden>
+    <div class="menu__inner wrap">
+      <div class="menu__head">
+        <span class="menu__brand">Shakeel</span>
+        <button class="icon-btn" type="button" data-menu-close aria-label="Close menu" data-i18n-aria-label="nav.menu.close">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+      </div>
+
+      <nav class="menu__nav" aria-label="Menu" data-i18n-aria-label="nav.menu.aria">
+        <ul class="menu__list">
+          <li><a class="menu__link" href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a class="menu__link" href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a class="menu__link" href="work.html" aria-current="page" data-i18n="nav.work">Work</a></li>
+          <li><a class="menu__link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu__foot">
+        <div class="lang" role="group" aria-label="Language" data-i18n-aria-label="lang.aria">
+          <button class="lang__btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+          <span class="lang__sep" aria-hidden="true">/</span>
+          <button class="lang__btn" type="button" data-lang="nl" aria-pressed="false">NL</button>
+        </div>
+
+        <ul class="menu__social">
+          <li><a class="link" href="https://github.com/Shwek07" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a class="link" href="mailto:shakeelramdhiansing@gmail.com" data-i18n="footer.email">Email</a></li>
+          <li><a class="link" href="https://wa.me/5978685952" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ==================== PAGE HEADER ==================== -->
+    <div class="page-header wrap">
+      <p class="eyebrow page-header__eyebrow" data-i18n="work.eyebrow">Work</p>
+      <h1 data-i18n="work.title">Projects</h1>
+      <p class="lead" data-i18n="work.lead">
+        Four projects I built during my studies and in my own time. Most of them are booking or
+        reservation systems, because that is the kind of problem I keep coming back to. All of them are
+        live, so you can click through them yourself.
+      </p>
+    </div>
+
+    <!-- ==================== PROJECT LIST ==================== -->
+    <section class="section" aria-labelledby="work-title">
+      <div class="wrap stack">
+        <h2 class="section__label reveal" id="work-title" data-i18n="work.title">Projects</h2>
+
+        <!-- While the screenshots load, CSS shows the skeleton further down. -->
+        <div class="work-loader is-loading" data-work-loader>
+
+          <ol class="work-list">
+
+            <!-- AUTOBOT -->
+            <li class="project reveal">
+              <div class="project__body">
+                <h3 class="project__title">
+                  <a href="https://autobot-unasat.vercel.app/" target="_blank" rel="noopener">AutoBot</a>
+                </h3>
+                <p class="project__summary" data-i18n="proj.autobot.desc">
+                  A car parts platform where you first select your car and then only see the parts that
+                  actually fit it. There is a chatbot that helps you search, you can log in with your
+                  Google account, and you can reserve the parts you find instead of ordering straight
+                  away.
+                </p>
+                <ul class="tags">
+                  <li>Next.js</li>
+                  <li>React</li>
+                  <li>Google OAuth</li>
+                  <li>Vercel</li>
+                </ul>
+                <p class="project__links">
+                  <a class="link link--mono" href="https://autobot-unasat.vercel.app/" target="_blank" rel="noopener">
+                    <span data-i18n="proj.live">Live site</span> <span aria-hidden="true">&#8599;</span>
+                  </a>
+                  <!-- TODO Shakeel: if this project has a public repository, add it like this:
+                  <a class="link link--mono" href="https://github.com/Shwek07/REPO-NAME" target="_blank" rel="noopener">
+                    GitHub <span aria-hidden="true">&#8599;</span>
+                  </a>
+                  -->
+                </p>
+              </div>
+
+              <a class="project__media" href="https://autobot-unasat.vercel.app/" target="_blank"
+                 rel="noopener" tabindex="-1" aria-hidden="true">
+                <img src="img/projects/autobot.png" alt="" width="1600" height="774">
+              </a>
+            </li>
+
+            <!-- SRANAN KAPPER -->
+            <li class="project reveal">
+              <div class="project__body">
+                <h3 class="project__title">
+                  <a href="https://sranankapper.vercel.app/" target="_blank" rel="noopener">Sranan Kapper</a>
+                </h3>
+                <p class="project__summary" data-i18n="proj.sranankapper.desc">
+                  A booking platform for barbershops where customers can find the shops that are listed, browse
+                  the services they offer, pick a time and book an appointment without having to call first.
+                </p>
+                <ul class="tags">
+                  <li>Vercel</li>
+                  <!-- TODO Shakeel: replace this placeholder with the technologies you actually used. -->
+                  <li class="tag--todo" data-i18n="proj.todoStack">add tech stack</li>
+                </ul>
+                <p class="project__links">
+                  <a class="link link--mono" href="https://sranankapper.vercel.app/" target="_blank" rel="noopener">
+                    <span data-i18n="proj.live">Live site</span> <span aria-hidden="true">&#8599;</span>
+                  </a>
+                </p>
+              </div>
+
+              <a class="project__media" href="https://sranankapper.vercel.app/" target="_blank"
+                 rel="noopener" tabindex="-1" aria-hidden="true">
+                <img src="img/projects/sranangkapper.png" alt="" width="1600" height="762">
+              </a>
+            </li>
+
+            <!-- SHARPEDGE VISUALS -->
+            <li class="project reveal">
+              <div class="project__body">
+                <h3 class="project__title">
+                  <a href="https://597-sharpedge-visuals.vercel.app/" target="_blank" rel="noopener">SharpEdge Visuals</a>
+                </h3>
+                <p class="project__summary" data-i18n="proj.sharpedge.desc">
+                  A website for a photography business, with an overview of what is offered and a booking
+                  flow for a shoot. This one leaned the most on the design side: the layout and the
+                  photography had to carry it.
+                </p>
+                <ul class="tags">
+                  <li>Vercel</li>
+                  <!-- TODO Shakeel: replace this placeholder with the technologies you actually used. -->
+                  <li class="tag--todo" data-i18n="proj.todoStack">add tech stack</li>
+                </ul>
+                <p class="project__links">
+                  <a class="link link--mono" href="https://597-sharpedge-visuals.vercel.app/" target="_blank" rel="noopener">
+                    <span data-i18n="proj.live">Live site</span> <span aria-hidden="true">&#8599;</span>
+                  </a>
+                </p>
+              </div>
+
+              <a class="project__media" href="https://597-sharpedge-visuals.vercel.app/" target="_blank"
+                 rel="noopener" tabindex="-1" aria-hidden="true">
+                <img src="img/projects/sharpedge.png" alt="" width="1600" height="765">
+              </a>
+            </li>
+
+            <!-- BOOKFLOW SU -->
+            <li class="project reveal">
+              <div class="project__body">
+                <h3 class="project__title">
+                  <a href="https://bookflow-su.vercel.app/" target="_blank" rel="noopener">BookFlow SU</a>
+                </h3>
+                <p class="project__summary" data-i18n="proj.bookflow.desc">
+                  A landing page for a booking platform meant for salons, barbers and other service
+                  businesses. The idea was one place where a business can be found and booked, instead of
+                  every shop needing its own site.
+                </p>
+                <ul class="tags">
+                  <li>Vercel</li>
+                  <!-- TODO Shakeel: replace this placeholder with the technologies you actually used. -->
+                  <li class="tag--todo" data-i18n="proj.todoStack">add tech stack</li>
+                </ul>
+                <p class="project__links">
+                  <a class="link link--mono" href="https://bookflow-su.vercel.app/" target="_blank" rel="noopener">
+                    <span data-i18n="proj.live">Live site</span> <span aria-hidden="true">&#8599;</span>
+                  </a>
+                </p>
+              </div>
+
+              <a class="project__media" href="https://bookflow-su.vercel.app/" target="_blank"
+                 rel="noopener" tabindex="-1" aria-hidden="true">
+                <img src="img/projects/bookflow.png" alt="" width="1600" height="774">
+              </a>
+            </li>
+          </ol>
+
+          <!-- Skeleton: four rows, same layout as the projects above -->
+          <div class="skeleton-list" aria-hidden="true">
+            <div class="skeleton">
+              <div class="skeleton__body">
+                <div class="skeleton__bar skeleton__bar--title"></div>
+                <div class="skeleton__bar"></div>
+                <div class="skeleton__bar"></div>
+                <div class="skeleton__bar skeleton__bar--short"></div>
+                <div class="skeleton__tags">
+                  <div class="skeleton__bar skeleton__bar--tag"></div>
+                  <div class="skeleton__bar skeleton__bar--tag"></div>
+                </div>
+              </div>
+              <div class="skeleton__media"></div>
+            </div>
+
+            <div class="skeleton">
+              <div class="skeleton__body">
+                <div class="skeleton__bar skeleton__bar--title"></div>
+                <div class="skeleton__bar"></div>
+                <div class="skeleton__bar"></div>
+                <div class="skeleton__bar skeleton__bar--short"></div>
+                <div class="skeleton__tags">
+                  <div class="skeleton__bar skeleton__bar--tag"></div>
+                  <div class="skeleton__bar skeleton__bar--tag"></div>
+                </div>
+              </div>
+              <div class="skeleton__media"></div>
+            </div>
+
+            <div class="skeleton">
+              <div class="skeleton__body">
+                <div class="skeleton__bar skeleton__bar--title"></div>
+                <div class="skeleton__bar"></div>
+                <div class="skeleton__bar"></div>
+                <div class="skeleton__bar skeleton__bar--short"></div>
+                <div class="skeleton__tags">
+                  <div class="skeleton__bar skeleton__bar--tag"></div>
+                  <div class="skeleton__bar skeleton__bar--tag"></div>
+                </div>
+              </div>
+              <div class="skeleton__media"></div>
+            </div>
+
+            <div class="skeleton">
+              <div class="skeleton__body">
+                <div class="skeleton__bar skeleton__bar--title"></div>
+                <div class="skeleton__bar"></div>
+                <div class="skeleton__bar"></div>
+                <div class="skeleton__bar skeleton__bar--short"></div>
+                <div class="skeleton__tags">
+                  <div class="skeleton__bar skeleton__bar--tag"></div>
+                  <div class="skeleton__bar skeleton__bar--tag"></div>
+                </div>
+              </div>
+              <div class="skeleton__media"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CLOSING ==================== -->
+    <section class="section">
+      <div class="wrap stack">
+        <h2 class="section__label reveal" data-i18n="work.next.title">Next</h2>
+
+        <div class="prose reveal">
+          <p data-i18n-html="work.next.text">
+            I keep adding to this page as I finish new things. If you want to know what I am working on at
+            the moment, the <a class="link link--accent" href="index.html">home page</a> has a short
+            overview, or you can just
+            <a class="link link--accent" href="contact.html">get in touch</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <div class="site-footer__brand">
+        <p class="site-footer__name">Shakeel Ramdhiansing<span aria-hidden="true">.</span></p>
+        <p class="site-footer__meta">
+          &copy; <span data-year>2026</span>
+          <span aria-hidden="true">&middot;</span>
+          <span data-i18n="footer.updated">Last updated August 2026</span>
+        </p>
+      </div>
+
+      <div class="site-footer__end">
+        <ul class="site-footer__links">
+          <li><a class="link" href="mailto:shakeelramdhiansing@gmail.com" data-i18n="footer.email">Email</a></li>
+          <li><a class="link" href="https://github.com/Shwek07" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a class="link" href="https://wa.me/5978685952" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+
+        <a class="icon-btn site-footer__top" href="#main" aria-label="Back to top"
+           data-i18n-aria-label="footer.backToTop">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 19V5M6 11l6-6 6 6" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/work.js" defer></script>
+</body>
+</html>

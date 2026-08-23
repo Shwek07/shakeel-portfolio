@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" data-page="about">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About &mdash; Shakeel Ramdhiansing</title>
+  <meta name="description" content="Background, education and interests of Shakeel Ramdhiansing, a Software Engineering student at Unasat in Suriname.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme.js"></script>
+  <script src="js/i18n.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="index.html">Shakeel Ramdhiansing<span aria-hidden="true">.</span></a>
+
+      <nav class="nav" aria-label="Main navigation" data-i18n-aria-label="nav.aria">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html" data-spy-link="home" data-i18n="nav.home">Home</a></li>
+          <li><a class="nav__link" href="about.html" aria-current="page" data-spy-link="about" data-i18n="nav.about">About</a></li>
+          <li><a class="nav__link" href="work.html" data-spy-link="work" data-i18n="nav.work">Work</a></li>
+          <li><a class="nav__link" href="contact.html" data-spy-link="contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+
+        <div class="nav__tools">
+          <div class="lang lang--header" role="group" aria-label="Language" data-i18n-aria-label="lang.aria">
+            <button class="lang__btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+            <span class="lang__sep" aria-hidden="true">/</span>
+            <button class="lang__btn" type="button" data-lang="nl" aria-pressed="false">NL</button>
+          </div>
+
+          <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch to dark theme">
+            <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20.5 13.3A8.5 8.5 0 1 1 10.7 3.5a7 7 0 0 0 9.8 9.8Z" />
+            </svg>
+            <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2" />
+              <path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4" />
+            </svg>
+          </button>
+
+          <button class="icon-btn nav__toggle" type="button" data-menu-open aria-expanded="false"
+                  aria-controls="menu" aria-label="Open menu" data-i18n-aria-label="nav.menu.open">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+              <path d="M4 8h16M4 16h16" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== FULLSCREEN MOBILE MENU ==================== -->
+  <div class="menu" id="menu" data-menu role="dialog" aria-modal="true"
+       aria-label="Menu" data-i18n-aria-label="nav.menu.aria" hidden>
+    <div class="menu__inner wrap">
+      <div class="menu__head">
+        <span class="menu__brand">Shakeel</span>
+        <button class="icon-btn" type="button" data-menu-close aria-label="Close menu" data-i18n-aria-label="nav.menu.close">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+      </div>
+
+      <nav class="menu__nav" aria-label="Menu" data-i18n-aria-label="nav.menu.aria">
+        <ul class="menu__list">
+          <li><a class="menu__link" href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a class="menu__link" href="about.html" aria-current="page" data-i18n="nav.about">About</a></li>
+          <li><a class="menu__link" href="work.html" data-i18n="nav.work">Work</a></li>
+          <li><a class="menu__link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu__foot">
+        <div class="lang" role="group" aria-label="Language" data-i18n-aria-label="lang.aria">
+          <button class="lang__btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+          <span class="lang__sep" aria-hidden="true">/</span>
+          <button class="lang__btn" type="button" data-lang="nl" aria-pressed="false">NL</button>
+        </div>
+
+        <ul class="menu__social">
+          <li><a class="link" href="https://github.com/Shwek07" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a class="link" href="mailto:shakeelramdhiansing@gmail.com" data-i18n="footer.email">Email</a></li>
+          <li><a class="link" href="https://wa.me/5978685952" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ==================== PAGE HEADER ==================== -->
+    <div class="page-header wrap">
+      <div class="about-intro">
+        <div>
+          <p class="eyebrow page-header__eyebrow" data-i18n="about.eyebrow">About</p>
+          <h1 data-i18n="about.title">A bit more about me</h1>
+          <p class="lead" data-i18n="about.lead">
+           I’m Shakeel, a Software Engineering student at UNASAT in Suriname.
+           I enjoy building things for the web, whether it’s for university,
+           a personal project, or a real-world idea. Alongside software development,
+           I also work in graphic design at the university,
+           which has given me a strong interest in both how a product works and how it looks.
+          </p>
+        </div>
+
+        <!-- <div class="about-intro__portrait">
+          <img src="img/shakeel.png" alt="Portrait photo of Shakeel Ramdhiansing" data-i18n-alt="home.portraitAlt"
+               width="640" height="1138">
+        </div> -->
+      </div>
+    </div>
+
+    <!-- ==================== BACKGROUND ==================== -->
+    <section class="section">
+      <div class="wrap section__grid">
+        <div class="section__head reveal">
+          <h2 class="section__label" data-i18n="about.background.title">Background</h2>
+        </div>
+
+        <div class="prose reveal">
+          <p data-i18n="about.background.p1">
+            I started in ICT at Natin-MBO, where I finished the Applicatie Ontwerper programme in 2023.
+            Right after that I continued at Unasat with Software Engineering at HBO level, and I am now
+            in my third year there.
+          </p>
+          <!-- <p data-i18n="about.background.p2">
+            The MBO years were mostly about getting something to work at all. Since then a lot more of my
+            attention goes to the person on the other side of the screen: whether the steps make sense,
+            whether the interface explains itself, and whether it still works on a phone.
+          </p> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== WHAT I ENJOY ==================== -->
+    <section class="section">
+      <div class="wrap section__grid">
+        <div class="section__head reveal">
+          <h2 class="section__label" data-i18n="about.enjoy.title">What I enjoy</h2>
+        </div>
+
+        <div class="prose reveal">
+          <p data-i18n-html="about.enjoy.p1">
+            One of my favourite parts of development is turning something that would normally take several
+            manual steps into something simple and easy to use.
+          </p>
+          <p data-i18n="about.enjoy.p2">
+            I also really enjoy front-end development. My design work has a big influence on that. I naturally pay attention to things like spacing, typography, visual hierarchy, animations, hover states and loading states. Those small details can make a website feel much more polished.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== INTERESTS ==================== -->
+    <section class="section">
+      <div class="wrap section__grid">
+        <div class="section__head reveal">
+          <h2 class="section__label" data-i18n="about.interests.title">Interests</h2>
+        </div>
+
+        <div class="prose reveal">
+          <p data-i18n="about.interests.p1">
+            Outside of my coursework, I spend a lot of time exploring web design and front-end development.
+            I like looking at how modern websites are structured, how they use animation without becoming
+            distracting and what makes a website feel fast and enjoyable to use.
+          </p>
+          <p data-i18n="about.interests.p2">
+            I’m also interested in building small digital tools for local businesses. I like the idea of
+            creating simple software that can take some of that work away and make things easier for both
+            the business and its customers.
+          </p>
+          <!-- TODO Shakeel: add a line about your interests outside of IT (sport, music, gaming,
+               whatever fits). Add it to about.interests.p1/p2 in js/i18n.js in both languages. -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION ==================== -->
+    <section class="section">
+      <div class="wrap section__grid">
+        <div class="section__head reveal">
+          <h2 class="section__label" data-i18n="about.education.title">Education</h2>
+        </div>
+
+        <ol class="panel panel--compact reveal">
+          <li class="panel__row">
+            <p class="panel__meta">
+              <span class="panel__dot" aria-hidden="true"></span>
+              <span data-i18n="edu.hbo.date">2023 &mdash; now</span>
+            </p>
+            <div class="panel__main">
+              <h3 class="panel__title" data-i18n="edu.hbo.degree">Software Engineering (HBO)</h3>
+              <p class="panel__sub" data-i18n="edu.hbo.org">Unasat &mdash; Suriname</p>
+              <p class="panel__status" data-i18n="edu.hbo.status">Third year</p>
+            </div>
+          </li>
+
+          <li class="panel__row">
+            <p class="panel__meta">
+              <span class="panel__dot" aria-hidden="true"></span>
+              <span data-i18n="edu.mbo.date">2019 &mdash; 2023</span>
+            </p>
+            <div class="panel__main">
+              <h3 class="panel__title" data-i18n="edu.mbo.degree">Applicatie Ontwerper (MBO)</h3>
+              <p class="panel__sub" data-i18n="edu.mbo.org">Natin-MBO, ICT &mdash; Suriname</p>
+              <p class="panel__status" data-i18n="edu.mbo.status">Completed</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section class="section">
+      <div class="wrap section__grid">
+        <div class="section__head reveal">
+          <h2 class="section__label" data-i18n="about.experience.title">Experience</h2>
+        </div>
+
+        <ol class="panel reveal">
+          <li class="panel__row">
+            <p class="panel__meta">
+              <span class="panel__dot" aria-hidden="true"></span>
+              <span data-i18n="exp.marcom.date">Sept 2023 &mdash; now</span>
+            </p>
+            <div class="panel__main">
+              <h3 class="panel__title" data-i18n="exp.marcom.role">Marketing &amp; Communication</h3>
+              <p class="panel__sub" data-i18n="exp.marcom.org">Anton de Kom University of Suriname</p>
+            </div>
+
+            <p class="panel__text" data-i18n="exp.marcom.desc">
+                I work as a graphic designer on flyers, logos and other visual material for different
+                purposes within the university. It has been good practice for detail work and for
+                thinking about who is going to look at the thing I am making.
+              </p>
+          </li>
+
+          <li class="panel__row">
+            <p class="panel__meta">
+              <span class="panel__dot" aria-hidden="true"></span>
+              <span data-i18n="exp.intern.date">Jun 2023 &mdash; Aug 2023</span>
+            </p>
+            <div class="panel__main">
+              <h3 class="panel__title" data-i18n="exp.intern.role">ICT Intern</h3>
+              <p class="panel__sub" data-i18n="exp.intern.org">Anton de Kom University of Suriname</p>
+            </div>
+
+            <p class="panel__text" data-i18n="exp.intern.desc">
+                During my internship I worked on a document approval system. It was built to digitise the
+                manual process of managing and approving purchase receipts and make it a lot less
+                time-consuming.
+              </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ==================== LEARNING ==================== -->
+    <section class="section">
+      <div class="wrap section__grid">
+        <div class="section__head reveal">
+          <h2 class="section__label" data-i18n="about.learning.title">Learning now</h2>
+        </div>
+
+        <div class="prose reveal">
+          <p data-i18n-html="about.learning.p1">
+            I’m still learning and that’s something I actually enjoy about software development. There is
+            always another technology to understand, another problem to solve or another way to improve
+            something I’ve already built.
+          </p>
+          <p data-i18n="about.learning.p2">
+            For now, my goal is simple: keep building, keep learning and become a developer who cares about
+            both the code behind a product and the experience of the person using it.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <div class="site-footer__brand">
+        <p class="site-footer__name">Shakeel Ramdhiansing<span aria-hidden="true">.</span></p>
+        <p class="site-footer__meta">
+          &copy; <span data-year>2026</span>
+          <span aria-hidden="true">&middot;</span>
+          <span data-i18n="footer.updated">Last updated August 2026</span>
+        </p>
+      </div>
+
+      <div class="site-footer__end">
+        <ul class="site-footer__links">
+          <li><a class="link" href="mailto:shakeelramdhiansing@gmail.com" data-i18n="footer.email">Email</a></li>
+          <li><a class="link" href="https://github.com/Shwek07" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a class="link" href="https://wa.me/5978685952" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+
+        <a class="icon-btn site-footer__top" href="#main" aria-label="Back to top"
+           data-i18n-aria-label="footer.backToTop">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 19V5M6 11l6-6 6 6" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
