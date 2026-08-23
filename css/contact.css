@@ -1,0 +1,146 @@
+/* ==========================================================================
+   Shakeel Ramdhiansing — contact
+
+   The contact page only: the details list beside the form, and the form
+   fields with their error states. Needs css/main.css for the design tokens.
+
+   Breakpoints used here (min-width, so mobile is the starting point):
+     56rem / 896px   contact details beside the form
+
+   1. Contact page + form
+   ========================================================================== */
+
+/* 1. Contact page + form
+   ========================================================================== */
+
+.contact-grid {
+  display: grid;
+  gap: var(--space-7);
+}
+
+@media (min-width: 56rem) {
+  .contact-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: var(--space-8);
+  }
+}
+
+.contact-list {
+  display: grid;
+  gap: var(--space-4);
+  align-content: start;
+  max-width: 30rem;
+}
+
+.contact-list__row {
+  display: grid;
+  gap: var(--space-1);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-list__row:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.contact-list__key {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.contact-list__value {
+  overflow-wrap: anywhere;
+}
+
+.contact-list__value a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.contact-list__value a:hover {
+  color: var(--accent);
+}
+
+.form {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.field {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.field label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  background-color: var(--background);
+  color: var(--text);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  transition: border-color var(--transition), background-color var(--transition);
+}
+
+.field input:hover,
+.field textarea:hover {
+  border-color: var(--muted);
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  background-color: var(--accent-soft);
+}
+
+.field textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.field__error {
+  font-size: 0.8125rem;
+  color: var(--accent);
+  min-height: 1.25rem;
+}
+
+.field--invalid input,
+.field--invalid textarea {
+  border-color: var(--accent);
+}
+
+.form__note {
+  padding: var(--space-4);
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.9375rem;
+  color: var(--muted);
+}
+
+.form__note[hidden] {
+  display: none;
+}
+
+.form__note p + p {
+  margin-top: var(--space-2);
+}
+
+.form__disclaimer {
+  font-size: 0.8125rem;
+  color: var(--muted);
+}

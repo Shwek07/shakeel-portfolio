@@ -2,7 +2,7 @@
   <!--
     Tab logo: a code tag on a rounded accent tile.
 
-    The colours are the accent tokens from css/style.css, so the tab matches
+    The colours are the accent tokens from css/main.css, so the tab matches
     the page: #2347d4 tile with a white glyph in light, and the lighter
     #8fb0ff tile with a near-black glyph in dark.
 

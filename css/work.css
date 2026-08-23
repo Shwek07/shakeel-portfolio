@@ -1,0 +1,273 @@
+/* ==========================================================================
+   Shakeel Ramdhiansing — work
+
+   Everything that draws a project: the project rows themselves and the
+   skeleton that stands in for them while their screenshots load.
+   Loaded by work.html and by index.html, which shows a short pick of the
+   same rows. Needs css/main.css for the design tokens.
+
+   Breakpoints used here (min-width, so mobile is the starting point):
+     48rem / 768px   tablet: project rows and skeletons side by side
+
+   1. Projects
+   2. Loading skeleton
+   3. Reduced motion
+   ========================================================================== */
+
+
+/* 1. Projects
+   ========================================================================== */
+.work-list {
+  display: grid;
+  gap: var(--space-5);
+}
+
+/* Each project is one card: text on one side, screenshot on the other */
+.project {
+  display: grid;
+  gap: var(--space-5);
+  padding: var(--space-5);
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--transition);
+}
+
+.project:hover {
+  border-color: var(--border-strong);
+}
+
+.project__body {
+  display: grid;
+  gap: var(--space-3);
+  align-content: start;
+  min-width: 0;
+}
+
+.project__head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.project__title {
+  font-size: clamp(1.125rem, 1.05rem + 0.4vw, 1.3125rem);
+}
+
+.project__title a {
+  color: var(--text-strong);
+  text-decoration: none;
+}
+
+.project__summary {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--muted);
+  max-width: 46ch;
+}
+
+.project__links .link {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+}
+
+.project__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-top: var(--space-1);
+}
+
+.project__media {
+  display: block;
+  /* On one-column cards the screenshot leads, and is shown uncropped. */
+  order: -1;
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background-color: var(--surface);
+}
+
+.project__media img {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  object-position: left top;
+  transition: transform 400ms ease;
+}
+
+.project:hover .project__media img {
+  transform: scale(1.02);
+}
+
+.project:hover .project__title a {
+  color: var(--accent);
+}
+
+/* Side by side from tablet up, and the screenshot swaps sides every other
+   card. `order` moves it, so the reading order in the HTML stays text-first
+   for screen readers and keyboards. */
+@media (min-width: 48rem) {
+  .project {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
+    gap: var(--space-5);
+    align-items: center;
+  }
+
+  .project__media {
+    order: 0;
+  }
+
+  .project__media img {
+    /* Taller crop so the card has presence beside the text */
+    aspect-ratio: 16 / 10;
+  }
+
+  .project:nth-child(even) .project__media {
+    order: -1;
+  }
+}
+
+/* Full-width link card under the projects */
+.allwork {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-top: var(--space-5);
+  padding: var(--space-4);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--transition), background-color var(--transition);
+}
+
+.allwork:hover {
+  border-color: var(--accent);
+  background-color: var(--accent-soft);
+}
+
+.allwork__arrow {
+  transition: transform var(--transition);
+}
+
+.allwork:hover .allwork__arrow {
+  transform: translateX(3px);
+}
+
+
+/* 2. Loading skeleton
+   Only used when JavaScript is available: the real markup stays visible for
+   everyone else. js/work.js removes .is-loading as soon as the project
+   images are ready — no artificial waiting beyond a short minimum.
+   ========================================================================== */
+.skeleton-list {
+  display: none;
+}
+
+.js .work-loader.is-loading .skeleton-list {
+  display: grid;
+  gap: var(--space-7);
+}
+
+.js .work-loader.is-loading .work-list {
+  display: none;
+}
+
+.skeleton {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.skeleton + .skeleton {
+  padding-top: var(--space-7);
+  border-top: 1px solid var(--border);
+}
+
+@media (min-width: 48rem) {
+  .skeleton {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    gap: var(--space-6);
+    align-items: center;
+  }
+}
+
+.skeleton__body {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.skeleton__bar {
+  height: 0.75rem;
+  border-radius: var(--radius);
+  background-color: var(--surface-strong);
+  animation: skeleton-pulse 1.4s ease-in-out infinite;
+}
+
+.skeleton__bar--title {
+  height: 1.375rem;
+  width: 40%;
+}
+
+.skeleton__bar--short {
+  width: 65%;
+}
+
+.skeleton__bar--tag {
+  height: 1.5rem;
+  width: 4.5rem;
+}
+
+.skeleton__tags {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.skeleton__media {
+  aspect-ratio: 2 / 1;
+  border-radius: var(--radius-lg);
+  background-color: var(--surface-strong);
+  animation: skeleton-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes skeleton-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
+
+/* Fade the real content in once the skeleton is removed */
+.work-loader.is-loaded .work-list {
+  animation: fade-in 400ms ease both;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+/* 3. Reduced motion
+   Lives here rather than in css/main.css: this sheet loads after that one, so
+   an override there would lose to the rule it is meant to cancel.
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  .project:hover .project__media img {
+    transform: none;
+  }
+}

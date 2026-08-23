@@ -57,7 +57,7 @@
     var closeButton = document.querySelector('[data-menu-close]');
     if (!panel || !openButton || !closeButton) return;
 
-    /* Keep this the same as the transition in css/style.css. */
+    /* Keep this the same as the transition in css/main.css. */
     var CLOSE_DURATION = 220;
     var closeTimer = null;
     var lastFocused = null;
