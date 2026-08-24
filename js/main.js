@@ -45,7 +45,12 @@
     onLanguageChange(describe);
 
     button.addEventListener('click', function () {
-      window.Theme.toggle();
+      /* The wipe starts from the middle of the button itself. */
+      var box = button.getBoundingClientRect();
+      window.Theme.toggle({
+        x: box.left + box.width / 2,
+        y: box.top + box.height / 2
+      });
       describe();
     });
   }

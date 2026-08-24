@@ -35,6 +35,7 @@
    20. Footer
    21. Scroll reveal
    22. Reduced motion
+   23. Theme switch
    ========================================================================== */
 
 
@@ -1839,4 +1840,28 @@ a {
   .menu__link:hover {
     transform: none;
   }
+}
+
+
+/* 23. Theme switch
+   A circle of the new theme opening out of the toggle button. The circle itself
+   is animated from js/theme.js, which measures the button and addresses the
+   pseudo-element directly; all this does is clear the browser's default
+   cross-fade out of its way.
+   ========================================================================== */
+::view-transition-old(root),
+::view-transition-new(root) {
+  /* The browser default is a cross-fade in plus-lighter blending. Both are
+     wrong here: we want one theme sitting whole on top of the other. */
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+/* The outgoing theme holds still while the incoming one opens over it */
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 2;
 }
