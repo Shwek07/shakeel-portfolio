@@ -110,6 +110,23 @@ ol {
   --radius-lg: 10px;
   --transition: 180ms ease;
 
+  /* Circuit-trace decoration. Used as a mask rather than a background so
+     the traces take their colour from --hero-circuit and follow the theme. */
+  --circuit: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96' fill='none' stroke='%23000' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M0 16h28l8 8h24l8-8h28'/%3E%3Cpath d='M16 0v40l8 8h20l8 8v16l-8 8H24l-8 8v8'/%3E%3Cpath d='M84 16v21'/%3E%3Ccircle cx='84' cy='40' r='2.6'/%3E%3Ccircle cx='16' cy='16' r='2' fill='%23000' stroke='none'/%3E%3Ccircle cx='52' cy='72' r='1.8' fill='%23000' stroke='none'/%3E%3C/svg%3E");
+  --circuit-size: 96px 96px;
+  /* Traces are full strength only at the very top and gone by 60% of the hero,
+     so the whole lower part of the section is clean. */
+  --circuit-fade: linear-gradient(to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 16%,
+    rgba(0, 0, 0, 0.45) 32%,
+    rgba(0, 0, 0, 0.16) 46%,
+    rgba(0, 0, 0, 0) 60%);
+  --circuit-fade-corner: linear-gradient(135deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.55) 45%,
+    rgba(0, 0, 0, 0) 88%);
+
   /* Widths */
   --max-width: 74rem;
   --gutter: clamp(1.25rem, 4vw, 3rem);
@@ -136,7 +153,7 @@ ol {
   --badge-bg: rgba(35, 71, 212, 0.04);
   --badge-border: rgba(35, 71, 212, 0.22);
   --hero-glow: rgba(35, 71, 212, 0.1);
-  --hero-dot: rgba(35, 71, 212, 0.1);
+  --hero-circuit: rgba(35, 71, 212, 0.12);
   --frame-border: rgba(16, 18, 24, 0.1);
   --frame-shadow: 0 2px 4px rgba(16, 18, 24, 0.04), 0 26px 50px -24px rgba(35, 71, 212, 0.32);
   --accent-line: rgba(35, 71, 212, 0.16);
@@ -150,56 +167,56 @@ ol {
    ========================================================================== */
 :root[data-theme='dark'] {
   color-scheme: dark;
-  --background: #101216;
-  --surface: #171a20;
-  --surface-strong: #21252d;
-  --text: #e6e8ec;
-  --text-strong: #f5f6f8;
-  --muted: #98a0ae;
-  --border: #262b34;
-  --border-strong: #3a414d;
+  --background: #131211;
+  --surface: #1c1a18;
+  --surface-strong: #272421;
+  --text: #eae7e2;
+  --text-strong: #fbf9f7;
+  --muted: #a09992;
+  --border: #2b2724;
+  --border-strong: #423d38;
   --accent: #8fb0ff;
   --accent-hover: #b3c8ff;
   --accent-soft: rgba(143, 176, 255, 0.12);
-  --accent-contrast: #0d1017;
-  --card: #171a20;
+  --accent-contrast: #14110f;
+  --card: #1c1a18;
   --status: #4ade80;
   --badge-bg: rgba(143, 176, 255, 0.07);
   --badge-border: rgba(143, 176, 255, 0.24);
   --hero-glow: rgba(143, 176, 255, 0.1);
-  --hero-dot: rgba(143, 176, 255, 0.09);
-  --frame-border: rgba(255, 255, 255, 0.11);
+  --hero-circuit: rgba(143, 176, 255, 0.11);
+  --frame-border: rgba(255, 250, 244, 0.11);
   --frame-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 26px 50px -24px rgba(143, 176, 255, 0.22);
   --accent-line: rgba(143, 176, 255, 0.2);
-  --tint: #13161b;
+  --tint: #171513;
 }
 
 /* Fallback for visitors with JavaScript disabled: follow the system setting. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
     color-scheme: dark;
-    --background: #101216;
-    --surface: #171a20;
-    --surface-strong: #21252d;
-    --text: #e6e8ec;
-    --text-strong: #f5f6f8;
-    --muted: #98a0ae;
-    --border: #262b34;
-    --border-strong: #3a414d;
+    --background: #131211;
+    --surface: #1c1a18;
+    --surface-strong: #272421;
+    --text: #eae7e2;
+    --text-strong: #fbf9f7;
+    --muted: #a09992;
+    --border: #2b2724;
+    --border-strong: #423d38;
     --accent: #8fb0ff;
     --accent-hover: #b3c8ff;
     --accent-soft: rgba(143, 176, 255, 0.12);
-    --accent-contrast: #0d1017;
-    --card: #171a20;
+    --accent-contrast: #14110f;
+    --card: #1c1a18;
     --status: #4ade80;
     --badge-bg: rgba(143, 176, 255, 0.07);
     --badge-border: rgba(143, 176, 255, 0.24);
     --hero-glow: rgba(143, 176, 255, 0.1);
-    --hero-dot: rgba(143, 176, 255, 0.09);
-    --frame-border: rgba(255, 255, 255, 0.11);
+    --hero-circuit: rgba(143, 176, 255, 0.11);
+    --frame-border: rgba(255, 250, 244, 0.11);
     --frame-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 26px 50px -24px rgba(143, 176, 255, 0.22);
     --accent-line: rgba(143, 176, 255, 0.2);
-    --tint: #13161b;
+    --tint: #171513;
   }
 }
 
@@ -362,18 +379,33 @@ a {
   max-width: 34ch;
 }
 
-.section__dots {
+/* A short run of circuit trace under a section heading. Decoration only. */
+.section__circuit {
   display: none;
 }
 
 @media (min-width: 62rem) {
-  .section__dots {
+  /* One diagonal falloff, so the traces thin out towards the bottom-right
+     instead of stopping at either edge. */
+  .section__circuit {
     display: block;
-    height: 5rem;
-    max-width: 9rem;
+    position: relative;
+    height: 7rem;
+    max-width: 13rem;
     margin-top: var(--space-6);
-    background-image: radial-gradient(var(--hero-dot) 1.5px, transparent 1.5px);
-    background-size: 18px 18px;
+    -webkit-mask-image: var(--circuit-fade-corner);
+    mask-image: var(--circuit-fade-corner);
+  }
+
+  .section__circuit::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--hero-circuit);
+    -webkit-mask-image: var(--circuit);
+    mask-image: var(--circuit);
+    -webkit-mask-size: var(--circuit-size);
+    mask-size: var(--circuit-size);
   }
 }
 
@@ -870,23 +902,43 @@ a {
 .hero {
   position: relative;
   isolation: isolate;
+  /* Soft blue glow behind the photo. The radial ends well short of the bottom,
+     so it needs no falloff of its own. */
+  background-image: radial-gradient(58% 52% at 78% 30%, var(--hero-glow), transparent 72%);
   padding-block: clamp(2rem, 1rem + 5vw, 4rem) var(--section-space);
   /* Keeps the glow and the floating cards from ever widening the page. */
   overflow: hidden;
 }
 
-/* Soft blue glow behind the photo plus a faint dot grid, fading out downwards */
+/* Carries only the downward falloff. Masking a parent masks its descendants,
+   so the traces in ::after inherit it. */
 .hero__bg {
   position: absolute;
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background-image:
-    radial-gradient(58% 52% at 78% 30%, var(--hero-glow), transparent 72%),
-    radial-gradient(var(--hero-dot) 1px, transparent 1px);
-  background-size: auto, 26px 26px;
-  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 58%, transparent 96%);
-  mask-image: linear-gradient(to bottom, #000 0%, #000 58%, transparent 96%);
+  -webkit-mask-image: var(--circuit-fade);
+  mask-image: var(--circuit-fade);
+}
+
+/* Faint circuit traces over the glow, thinning out towards the bottom */
+.hero__bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--hero-circuit);
+  -webkit-mask-image: var(--circuit);
+  mask-image: var(--circuit);
+  -webkit-mask-size: var(--circuit-size);
+  mask-size: var(--circuit-size);
+}
+
+/* Without mask support the tint would cover the hero as a flat block */
+@supports not ((-webkit-mask-image: url('a.svg')) or (mask-image: url('a.svg'))) {
+  .hero__bg::after,
+  .section__circuit::before {
+    display: none;
+  }
 }
 
 .hero__inner {
@@ -1060,9 +1112,9 @@ a {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 11px;
-  color: #e8eaee;
-  background-color: rgba(13, 17, 23, 0.72);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #ebe8e3;
+  background-color: rgba(19, 18, 17, 0.72);
+  border: 1px solid rgba(255, 250, 244, 0.14);
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
 }
@@ -1093,8 +1145,8 @@ a {
   margin: -1.75rem auto 0;
   padding: 0.875rem;
   border-radius: 12px;
-  background-color: rgba(13, 17, 23, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background-color: rgba(19, 18, 17, 0.9);
+  border: 1px solid rgba(255, 250, 244, 0.12);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
@@ -1107,7 +1159,7 @@ a {
 
 .infocard__row + .infocard__row {
   padding-top: 0.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 250, 244, 0.1);
 }
 
 .infocard__icon {
@@ -1139,13 +1191,13 @@ a {
 .infocard__key {
   font-size: 0.6875rem;
   line-height: 1.5;
-  color: #98a0ae;
+  color: #a09992;
 }
 
 .infocard__value {
   font-size: 0.8125rem;
   line-height: 1.4;
-  color: #f2f4f7;
+  color: #f3f0ec;
   overflow-wrap: anywhere;
 }
 
@@ -1154,7 +1206,7 @@ a {
   align-items: center;
   gap: 0.3125rem;
   font-size: 0.8125rem;
-  color: #f2f4f7;
+  color: #f3f0ec;
   text-decoration: none;
   overflow-wrap: anywhere;
   transition: color var(--transition);
